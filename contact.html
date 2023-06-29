@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
-</head>
-<body>
-    <form action="contact.php" method="post" id="form_contact">
-        <div id="nom_prenom">
-            <input type="text" name="nom" placeholder="Nom" autocomplete="off" class="nomprenom" required>
-            <input type="text" name="prenom" placeholder="Prénom" autocomplete="off" class="nomprenom" required>
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <div class="header-logo-container">
+          <figure>
+            <a href="index.html">
+              <img
+                src="image/logoweb.svg"
+                class="header-logo"
+                alt="Logo"
+                height="80%"
+            /></a>
+          </figure>
         </div>
-        <input type="email" name="email" placeholder="Email" autocomplete="off"  class="info_form" required>
-        <input type="text" name="objet" placeholder="Objet" autocomplete="off" class="info_form" required>
-        <input type="text" name="message" placeholder="Votre message" autocomplete="off" class="message" rows="10" required>
-        <input type="submit" class="stylebutton" name="bouton_form">
-        <input type="checkbox">
-    </form>
-</body>
+        <a href="cv-telecharger/CVNathanielFavario-dev.pdf" target="_blank">
+          <p class="header-txt">Mon CV</p>
+        </a>
+      </nav>
+    </header>
+    <main class="main-contact">
+      <form action="contact.php" method="post" id="form_contact">
+        <div id="nom-prenom">
+          <input
+            type="text"
+            name="nom"
+            placeholder="Nom"
+            autocomplete="off"
+            class="nomprenom"
+            required
+          />
+          <input
+            type="text"
+            name="prenom"
+            placeholder="Prénom"
+            autocomplete="off"
+            class="nomprenom"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+          class="info_form"
+          required
+        />
+        <input
+          type="text"
+          name="objet"
+          placeholder="Objet"
+          autocomplete="off"
+          class="info_form"
+          required
+        />
+        <input
+          type="text"
+          name="message"
+          placeholder="Votre message"
+          autocomplete="off"
+          class="message"
+          rows="10"
+          required
+        />
+        <button class="button-violet">Envoyer</button>
+        <div class="rgpd">
+          <input type="checkbox" class="checkbox" />
+          <p class="msg-rgpd">
+            En soumettant ce formulaire, j'accepte que les informations saisies
+            soient exploité <br />dans le cadre de la demande et de la relation
+            commerciale qui peut en découler
+          </p>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="background-footer">
+        <img
+          src="image/logosstxtblanc.svg"
+          alt="logo-tekllin"
+          class="footer-logo"
+        />
+      </div>
+      <nav>
+        <ul class="container-footer">
+          <li>
+            <img src="image/github.png" alt="github" class="logo-github" />
+          </li>
+          <li>
+            <img
+              src="image/linkedin.svg"
+              alt="linkedin"
+              class="logo-linkedin"
+            />
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
