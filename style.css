@@ -1,0 +1,294 @@
+@font-face {
+  font-family: consolas;
+  src: url(font/consolas/CONSOLA.TTF);
+}
+@font-face {
+  font-family: consolasBold;
+  src: url(font/consolas/CONSOLAB.TTF);
+}
+* {
+  font-family: consolas;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* header  */
+
+header {
+  width: 100%;
+  height: 100px;
+  margin-left: 46.5%;
+}
+.header-container {
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo-container {
+  width: 30%;
+  height: 100%;
+  align-items: center;
+}
+.header-logo {
+  transition: transform 0.35s;
+  width: 100px;
+}
+.header-logo:hover {
+  transform: scale(1.1);
+}
+.header-txt {
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-family: consolasBold;
+}
+
+main {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.top-first-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.top-first-container-left-container {
+  color: white;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+}
+.top-first-container-right-container {
+  color: white;
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nom {
+  font-size: 4em;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 15%;
+}
+.profession {
+  font-size: 2em;
+  margin-left: 10%;
+}
+.container-photo {
+  width: 600px;
+  height: 100%;
+  border-radius: 3%;
+  background: url(image/photomoi1.jpg) center;
+}
+.competance-container {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerx3 {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 200px;
+}
+.logo-competence {
+  width: 35%;
+  height: 25%;
+  border-radius: 100%;
+  background-color: white;
+}
+.titre-competence {
+  font-size: 2em;
+  font-family: consolasBold;
+  color: white;
+}
+.list-competence {
+  font-size: 1.1em;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.competences {
+  font-size: 1.5em;
+  font-family: consolas;
+  list-style-type: none;
+  margin-top: 4%;
+  color: white;
+}
+.logo-front {
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+.logo-back {
+  width: 80px;
+  margin-left: 17px;
+  margin-top: 15px;
+}
+.logo-language {
+  width: 80px;
+  margin-left: 17px;
+  margin-top: 18px;
+}
+.first-projet-container {
+  color: white;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.image-csgo {
+  width: 80vw;
+  border: 2px solid white;
+}
+h2 {
+  font-size: 3em;
+  font-family: consolasBold;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+.button-violet {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #601f6a;
+  color: white;
+  font-family: consolasBold;
+  border: none;
+}
+.other-projet-container {
+  color: white;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-container-op {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.rond-violet {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #601f6a;
+  margin-left: 2%;
+}
+.last-container-op {
+  width: 100%;
+  height: 769px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.first-img-container {
+  width: 320px;
+  height: 769px;
+  background: url(image/recette-burger-maison.jpg) center;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+.second-img-container {
+  width: 320px;
+  height: 300px;
+  background-color: red;
+  border-radius: 10px;
+}
+.img-projet-un {
+  background: url(image/dofus.jpg) center;
+  border: solid 2px white;
+}
+.img-projet-deux {
+  background: url(image/logcabins.png) center;
+  border: solid 2px white;
+}
+.img-projet-trois {
+  background: url(image/gambeoy.jpg) center;
+  border: solid 2px white;
+}
+.img-projet-quatre {
+  background: url(image/clicker.png) center;
+  border: solid 2px white;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  height: 80px;
+  transition: transform 0.35s;
+}
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+.background-footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+.container-footer {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-github {
+  width: 30px;
+}
+.logo-linkedin {
+  width: 30px;
+}
+.lien {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
