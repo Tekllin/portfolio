@@ -19,12 +19,15 @@
             />
           </figure>
         </div>
-        <a href="cv-telecharger/CVNathanielFavario-dev.pdf" target="_blank">
-          <p class="header-txt">Mon CV</p>
+        <a
+          href="cv-telecharger/CVNathanielFavario-dev.pdf"
+          target="_blank"
+          class="header-txt"
+        >
+          Mon CV
         </a>
-        <a href="contact.html">
-          <p class="header-txt">Me Contacter</p>
-        </a>
+        <a href="contact.php" class="header-txt"> Me Contacter </a>
+        <a href="gestion.php" target="_blank" class="header-txt">Gestion</a>
       </nav>
     </header>
     <main>
@@ -178,5 +181,28 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Empêche le rechargement de la page
+
+          var formData = new FormData(this);
+
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", "gestionnaire.php", true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              // Réinitialiser les valeurs des champs du formulaire
+              document.getElementById("prenom").value = "";
+              document.getElementById("nom").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("sujet").selectedIndex = 0;
+              document.getElementById("message").value = "";
+            }
+          };
+          xhr.send(formData);
+        });
+    </script>
   </body>
 </html>

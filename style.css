@@ -292,3 +292,44 @@ li {
   width: 100%;
   height: 100%;
 }
+/* contact */
+.main-contact {
+  height: 75vh;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+input {
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+  border: #601f6a solid 2px;
+  padding-left: 20px;
+}
+.checkbox {
+  width: 25px;
+  margin-right: 20px;
+}
+.nomprenom {
+  width: 240px;
+}
+#nom-prenom {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rgpd {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.msg-rgpd {
+  color: white;
+}
